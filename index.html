@@ -5,8 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>API connection training</title>
+        <link rel="stylesheet" href="style.scss">
     </head>
     <body>
-       
+        <form class="generator">
+            <label class="generator__input-name">
+                Wybierz płeć:
+                <select name="gender" class="generator__select">
+                    <option value="both" selected>Wszyscy</option>
+                    <option value="male">Mężczyźni</option>
+                    <option value="female">Kobiety</option>
+                </select>
+            </label>  
+            <label class="generator__input-name">
+               Liczba osób:
+               <input class="generator__input" type="number" name="users-number" value="10">
+            </label> 
+            <input class="generator__submit-btn" type="submit" value="Pobierz"></input> 
+        </form>
+        <div class="results"></div>
+        <script src="main.js"></script>
     </body>
 </html>
